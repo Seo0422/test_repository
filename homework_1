@@ -1,0 +1,23 @@
+str = open("fasta.txt", 'r')
+genes = str.read()
+str.close()
+
+countA = 0
+countC = 0
+countG = 0
+countT = 0
+
+for i in genes :
+    if i == "A" :
+        countA += 1
+    elif i == "C" :
+        countC += 1
+    elif i == "G" :
+        countG += 1
+    else : 
+        countT += 1
+        
+print("A의 개수는 {}입니다.".format(countA))
+print("C의 개수는 {}입니다.".format(countC))
+print("G의 개수는 {}입니다.".format(countG))
+print("T의 개수는 {}입니다.".format(countT))
